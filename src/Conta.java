@@ -4,9 +4,16 @@ public abstract class Conta {
     private double saldo;
     private Cliente titular;
 
+    // Construtor
     public Conta(Cliente titular) {
         this.saldo = 0.0;
         this.numero = "1";
+        this.titular = titular;
+    }
+
+    public Conta(Cliente titular, String conta){
+        this.saldo = 0;
+        this.numero = numero;
         this.titular = titular;
     }
 
@@ -34,12 +41,13 @@ public abstract class Conta {
         this.titular = titular;
     }
 
-    public void sacar(double  valor) {
-        saldo -= valor;
+
+    public void sacar(double valor) {
+        this.saldo -= valor;
     }
 
-    public void  depositar(double valor) {
-        saldo += valor;
+    public void depositar(double valor) {
+        this.saldo += valor;
     }
 
     public void transferir(double valor, Conta destino) {
@@ -51,4 +59,3 @@ public abstract class Conta {
         return this.saldo;
     }
 }
-

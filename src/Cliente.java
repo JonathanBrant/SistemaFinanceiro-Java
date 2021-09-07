@@ -1,12 +1,18 @@
 public class Cliente {
+
     private String nome;
     private String sobrenome;
 
-    public String getNome(){
-        return nome;
+    public String getNome() {
+        return this.nome;
     }
+
     public void setNome(String nome) {
-        this.nome = nome;
+        if(nome == null) {
+            System.out.println("Nome do cliente inválido");
+        } else {
+            this.nome = nome;
+        }
     }
 
     public String getSobrenome() {
@@ -16,5 +22,4 @@ public class Cliente {
     public void setSobrenome(String sobrenome) {
         this.sobrenome = sobrenome;
     }
-
 }

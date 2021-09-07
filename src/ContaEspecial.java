@@ -1,4 +1,4 @@
-public class ContaEspecial extends ContaCorrente{
+public class ContaEspecial extends ContaCorrente {
 
     private double limite;
 
@@ -19,5 +19,4 @@ public class ContaEspecial extends ContaCorrente{
     public double consultarSaldo() {
         return getSaldo() + this.limite;
     }
-
 }
