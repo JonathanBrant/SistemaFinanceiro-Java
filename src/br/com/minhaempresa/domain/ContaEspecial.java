@@ -1,3 +1,8 @@
+package br.com.minhaempresa.domain;
+
+import br.com.minhaempresa.domain.Cliente;
+import br.com.minhaempresa.domain.ContaCorrente;
+
 public class ContaEspecial extends ContaCorrente {
 
     private double limite;
